@@ -3,7 +3,7 @@ import AsyncSelect from 'react-select/async';
 import { useState } from 'react';
 import { fetchLocalMapBox } from './api';
 import './styles.css';
-import { OrderLocationdata } from './types';
+import { OrderLocationData } from './types';
 
 const initialPosition = {
     lat: -18.9110558,
@@ -20,7 +20,7 @@ type Place = {
 }
 
 type Props = {
-    onChangeLocation: (location: OrderLocationdata) => void;
+    onChangeLocation: (location: OrderLocationData) => void;
 }
 
 function OrderLocation({onChangeLocation} : Props) {
